@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="User Information">
+        <div class="slds-p-around_medium">
+            <lightning-input type="tel" label="Phone Number" value={phoneNumber} onchange={handlePhoneNumberChange}></lightning-input>
+            <lightning-input type="date" label="Date of Birth" required value={dateOfBirth} onchange={handleDateOfBirthChange}></lightning-input>
+            <lightning-combobox label="T-shirt Size" value={tshirtSize} options={tshirtOptions} onchange={handleTshirtSizeChange} required></lightning-combobox>
+            <lightning-combobox label="Shoe Size" value={shoeSize} options={shoeOptions} onchange={handleShoeSizeChange} required></lightning-combobox>
+        </div>
+    </lightning-card>
+</template>
